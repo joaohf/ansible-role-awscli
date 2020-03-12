@@ -8,7 +8,7 @@
   when: ansible_os_family == 'Debian'
 
 - name: Install awscli via pip.
-  pip: "name=awscli version={{ awscli_version }}"
+  pip: "name=awscli version={{ awscli_version }} executable: {{ pip_executable }}"
   become: yes
 
 - name: Ensure the users' .aws directory exists.

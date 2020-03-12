@@ -5,3 +5,5 @@ awscli_pip_package: python-pip
 awscli_version: 1.11.73
 
 awscli_users: []
+
+pip_executable: pip
